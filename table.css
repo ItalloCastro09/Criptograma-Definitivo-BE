@@ -1,0 +1,23 @@
+body{
+    background:url("4KBACK.jpg");
+    background-size: 100%;
+  }
+  table, th, td{
+  	border:1px solid black;
+  	position: center;
+    border-collapse: collapse;
+  	width: 600px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.6);
+    padding-left: 400px;
+  }
+  th{
+    background-color: #f2f2f2
+  }
+  p{
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+  }
+  input{
+    padding-left: 100px;
+  }

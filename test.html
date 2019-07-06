@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>criptografia2019</title>
+	<link rel="stylesheet" href="public/cripito2019.css">
+    
+	<style type="text/css">
+		:root {
+            --w: 70%;
+            --h: 50%;
+        }
+		#historia {
+			display: none;
+		}
+		.dialog {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0px;
+            height: 0px;
+            border: 1px solid hsla(0, 0%, 0%, 0);
+            border-radius: 2em;
+            overflow: hidden;
+            transition: 1s;
+            z-index: 10;
+            background: rgba(250,250,250,0.8);
+        }
+        .dialog div {
+            width: var(--w);
+            height: var(--h);
+            padding: 1em;
+            text-align: justify;
+        }
+         label[for="historia"]{
+         	cursor: pointer;
+         }
+         #historia:checked + .dialog {
+            /*display: block;*/
+            width: var(--w);
+            height: var(--h);
+            top: calc(50% - (var(--h) / 2));
+            left: calc(50% - (var(--w) / 2));
+            border: 1px solid hsla(0, 0%, 0%, 1);
+        }
+        #sobre{
+        	display: none;
+        }
+         label[for="sobre"]{
+         	cursor: pointer;
+         }
+        .dialog1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0px;
+            height: 0px;
+            border: 1px solid hsla(0, 0%, 0%, 0);
+            border-radius: 2em;
+            overflow: hidden;
+            transition: 1s;
+            z-index: 10;
+            background: rgba(250,250,250,0.8);
+        }
+        .dialog1 div {
+            width: var(--w);
+            height: var(--h);
+            padding: 1em;
+            text-align: justify;
+        }
+         label[for="sobre"]{
+         	cursor: pointer;	
+         }
+          #sobre:checked + .dialog1 {
+            /*display: block;*/
+            width: var(--w);
+            height: var(--h);
+            top: calc(50% - (var(--h) / 2));
+            left: calc(50% - (var(--w) / 2));
+            border: 1px solid hsla(0, 0%, 0%, 1);
+        }
+        #como{
+			display: none;
+		}
+		.dialog2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0px;
+            height: 0px;
+            border: 1px solid hsla(0, 0%, 0%, 0);
+            border-radius: 2em;
+            overflow: hidden;
+            transition: 1s;
+            z-index: 10;
+            background: rgba(250,250,250,0.8);
+        }
+        .dialog2 div {
+            width: var(--w);
+            height: var(--h);
+            padding: 1em;
+            text-align: justify;
+        }
+         label[for="como"]{
+         	cursor: pointer;
+         }
+         #como:checked + .dialog2 {
+            /*display: block;*/
+            width: var(--w);
+            height: var(--h);
+            top: calc(50% - (var(--h) / 2));
+            left: calc(50% - (var(--w) / 2));
+            border: 1px solid hsla(0, 0%, 0%, 1);
+        }
+	</style>
+</head>
+<body>
+	<h1 class="animated shake">CRIPTOGRAMA</h1>
+	<a href="/jogo"><h2>Jogar</h2></a> <br>
+
+	<h2><label for="historia" class="">História</label></h2>
+    <input type="checkbox" id="historia">
+    <div class="dialog">
+    	<div>
+    		<p>Você é um soldado da frota galática, sua tropa foi mandada a um planeta radioativo que estava com um estranho fluxo de cargas e mercadorias. Quando sua tropa chegou pra fazer uma vistoria furtiva descobriram que bombas de hidrogênio estavam sendo instaladas pela frente galática revolucionária, com a intensão de tornar o planeta uma bomba núclear de proporções interplanetárias. Em um ato de desespero você invade as instalações inimigas chega no computador central e se depara com um criptograma, resolva-o o mais rápido possível e salve a galáxia!</p><br>
+    		<label for="historia">Fechar</label>
+    	</div>
+    </div> <br>
+    <h2><label for="sobre">Sobre</label></h2>
+    <input type="checkbox" id="sobre">
+     <div class="dialog1">
+    	<div>
+    		<ul><li>Thierry_Matheus(thierrymaheusreal@gmail.com)</li></ul>
+    		<ul><li>Itallo_Castro(castrocast2@gmail.com)</li></ul>
+    		<ul><li>Kauê_Luís(ofckaue@gmail.com)</li></ul>
+            <ul><li>Maria_Conceição(5274368@gmail.com)</li></ul>
+            <ul><li>Gabriela_Batista(gabriela10batista@gmail.com)</li></ul>
+                <strong>O PROJETO FOI ORIENTADO PELO PROFESSOR:</strong>
+            <ul><li>Allan_Lima(allan.lima@igarassu.ifpe.edu.br)</li></ul>
+    			<br>
+    		<label for="sobre">Fechar</label>
+    	</div>
+    </div> <br>
+ 	<h2><label for="como">Como Jogar</label></h2>
+    <input type="checkbox" id="como">
+    <div class="dialog2">
+    	<div>
+    		<p>Um criptograma é uma lógica pré-determinada para decifrar uma mensagem. Você terá que decifrar o código da linguagem alieníngena utilizada pela FGR(frente galática revolucionária) e salvar à galáxia. Haverá um mensagem códificada composta por símbolos estranhos,  a baixo de cada símbolo desta linguagem existirá um espaço a ser preenchido com uma letra do alfabeto correspondente. Boa Sorte!</p><br>
+    		<label for="como">Fechar</label>
+    	</div>
+    </div>   
+
+</body>
+</html>
